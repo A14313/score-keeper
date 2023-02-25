@@ -3,8 +3,8 @@
 	"version": "1.0.1",
 	"description": "",
 	"scripts": {
-		"start": "parcel src/*.html --open",
-		"build": "parcel build src/*.html --public-url ./"
+		"start": "rm -rf dist/* && parcel src/*.html --open",
+		"build": "rm -rf dist/* && parcel build src/*.html --public-url ./"
 	},
 	"keywords": [],
 	"author": "",
