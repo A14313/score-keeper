@@ -1,0 +1,40 @@
+:root {
+	--clr-neutral-black-200: hsl(0, 0%, 90%);
+	--clr-neutral-black-300: hsl(0, 0%, 45%);
+	--clr-neutral-black-400: hsl(0, 0%, 25%);
+
+	--clr-neutral-white: hsl(0, 0%, 100%);
+
+	--clr-reset-button: hsl(340, 82%, 52%);
+	--clr-player-two: hsl(218, 100%, 63%);
+	--clr-player-one: hsl(174, 50%, 50%);
+	--clr-selection-icon: hsl(174, 54%, 30%);
+	--clr-winner: hsl(120, 76%, 38%);
+	--clr-loser: hsl(352, 69%, 51%);
+}
+
+body,
+.selection-container::after,
+#maxScore {
+	color: var(--clr-neutral-black-400);
+}
+
+.btn {
+	color: var(--clr-neutral-white);
+}
+
+.score-card-container {
+	background-color: var(--clr-neutral-white);
+}
+
+.score-card__body-desc {
+	color: var(--clr-neutral-black-300);
+}
+
+.winner {
+	color: var(--clr-winner);
+}
+
+.loser {
+	color: var(--clr-loser);
+}
