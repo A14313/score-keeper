@@ -15,6 +15,7 @@ playerOneButton.addEventListener('click', () => {
 	playerOneScoreSpan.innerText = playerOneScore;
 	maxScore.setAttribute('disabled', '');
 	selectionContainer.classList.add('disabled');
+	// playerOneButton.setAttribute('disabled', '');
 
 	if (playerOneScore === parseInt(maxScore.value)) {
 		desc.innerText = 'Player one wins';
@@ -22,6 +23,12 @@ playerOneButton.addEventListener('click', () => {
 		playerTwoButton.setAttribute('disabled', '');
 		playerOneScoreSpan.classList.add('winner');
 		playerTwoScoreSpan.classList.add('loser');
+	} else {
+		//Working on this.
+		// To have a timeout in every click
+		// setTimeout(() => {
+		// 	playerOneButton.removeAttribute('disabled');
+		// }, 500);
 	}
 });
 
@@ -31,6 +38,7 @@ playerTwoButton.addEventListener('click', () => {
 	playerTwoScoreSpan.innerText = playerTwoScore;
 	maxScore.setAttribute('disabled', '');
 	selectionContainer.classList.add('disabled');
+	// playerTwoButton.setAttribute('disabled', '');
 
 	if (playerTwoScore === parseInt(maxScore.value)) {
 		desc.innerText = 'Player Two wins';
@@ -38,6 +46,12 @@ playerTwoButton.addEventListener('click', () => {
 		playerOneButton.setAttribute('disabled', '');
 		playerTwoScoreSpan.classList.add('winner');
 		playerOneScoreSpan.classList.add('loser');
+	} else {
+		//Working on this.
+		// To have a timeout in every click
+		// setTimeout(() => {
+		// 	playerTwoButton.removeAttribute('disabled');
+		// }, 500);
 	}
 });
 
