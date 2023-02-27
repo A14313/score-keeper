@@ -1,3 +1,12 @@
+// ******************************************
+// ******************************************
+// ******************************************
+// ******************************************
+//This is the old code
+// ******************************************
+// ******************************************
+// ******************************************
+// ******************************************
 const playerOneButton = document.querySelector('#playerOneButton');
 const playerTwoButton = document.querySelector('#playerTwoButton');
 const playerOneScoreSpan = document.querySelector('#player-one-score');
