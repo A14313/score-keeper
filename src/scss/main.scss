@@ -19,6 +19,7 @@ body {
 	position: relative;
 	width: 55px;
 	border-radius: var(--border-radius);
+	transition: opacity var(--transition-speed) ease;
 
 	&::after {
 		content: '\25BC';
@@ -56,6 +57,7 @@ body {
 	outline: none;
 	border: 1px solid var(--clr-neutral-black-200);
 	width: 100%;
+	transition: opacity var(--transition-speed) ease;
 
 	&:disabled {
 		opacity: 0.5;
@@ -145,4 +147,9 @@ body {
 			flex-basis: 0;
 		}
 	}
+}
+
+.winner,
+.loser {
+	transition: color 5000ms ease;
 }
