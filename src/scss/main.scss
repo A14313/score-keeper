@@ -70,6 +70,7 @@ body {
 	cursor: pointer;
 	border-radius: var(--border-radius);
 	padding: 0.5em;
+	transition: opacity var(--transition-speed) ease;
 
 	&[disabled] {
 		opacity: 0.5;
@@ -149,7 +150,13 @@ body {
 	}
 }
 
-.winner,
-.loser {
-	transition: color 5000ms ease;
+.score {
+	transition: color var(--transition-speed) ease;
+
+	// I added this class to make an animation to the score span
+	// Because this is always present to class regardless if it is winner or loser
+	// the class looks like this class="score winner"
+	// if the reset button pressed, the winner omits.
+	// the score will remain.
+	// Thats why we plug the transition there because it is always present
 }
